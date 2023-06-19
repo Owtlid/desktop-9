@@ -1,0 +1,38 @@
+.sidebarWrapper {
+  width: 177px;
+  min-width: 177px;
+  height: calc(100% - 44px);
+  padding: 22px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #2d62ed;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.settingsContainer {
+  width: 100%;
+  padding: 0 24px 0 12px;
+  box-sizing: border-box;
+}
+
+.themeWrapper {
+  width: 54px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border-radius: 32px;
+  border: 1px solid #fff;
+
+  cursor: pointer;
+
+  margin-top: 50px;
+  margin-right: 16px;
+}

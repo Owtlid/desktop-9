@@ -1,0 +1,86 @@
+.mainHeader {
+  width: 100%;
+  height: 115px;
+  border-bottom: 1px solid #ededed;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 0 16px 14px 120px;
+
+  box-sizing: border-box;
+}
+
+.checkButton {
+  width: 106px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: #2d62ed;
+
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.mainHeaderActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.copyButton {
+  width: 90px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #ededed;
+  border: none;
+
+  font-size: 12px;
+  font-weight: 400;
+  color: #2d62ed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  width: 90px;
+  height: 36px;
+  background-color: #f8f8f8;
+  border: none;
+
+  font-size: 12px;
+  font-weight: 400;
+  color: #606060;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.deleteButton:hover {
+  background-color: #eaeaea;
+}
+
+.mainHeaderDivider {
+  width: 1px;
+  height: 24px;
+  background-color: #cccaca;
+}

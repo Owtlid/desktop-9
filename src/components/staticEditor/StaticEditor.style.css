@@ -1,0 +1,120 @@
+.editorWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 0 120px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.textArea {
+  background-color: #f8f8f8;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+.editorFooter {
+  border-top: 1px solid #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 65px;
+}
+
+.editroFooterStyling {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.editorStylingItem {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.editorFooterDivider {
+  width: 1px;
+  height: 18px;
+  background-color: #cccaca;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 192px;
+  height: 36px;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+}
+
+.tooltip-wrapper {
+  width: fit-content;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: " ";
+  background-color: #001849;
+  width: 15px;
+  height: 15px;
+  z-index: 500;
+  opacity: 0;
+  transition: all cubic-bezier(0.17, 0.67, 0.5, 0.71) 100ms;
+  pointer-events: none;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip-text);
+  white-space: nowrap;
+  background-color: #001849;
+  border-radius: 5px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  z-index: 555;
+  opacity: 0;
+  transition: all cubic-bezier(0.17, 0.67, 0.5, 0.71) 100ms;
+  pointer-events: none;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 0.555555555555556rem;
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+.tooltip.t-bottom::before {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(45deg);
+}
+
+.tooltip.t-bottom::after {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.tooltip.t-bottom:hover::before {
+  transform: translate(-50%, calc(100% + 5px)) rotate(45deg);
+}
+
+.tooltip.t-bottom:hover::after {
+  transform: translate(-50%, calc(100% + 10px));
+}

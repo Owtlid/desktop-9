@@ -1,0 +1,28 @@
+.menuWrapper {
+  position: absolute;
+  bottom: -135px;
+  width: 100%;
+  height: 125px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.menuItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-bottom: 1px solid #eaeaea;
+  box-sizing: border-box;
+}
+
+.menuItem:last-child {
+  border: none;
+}

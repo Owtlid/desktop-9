@@ -1,0 +1,25 @@
+.languageSelectorWrapper {
+  width: 144px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+
+  position: relative;
+}
+
+.languageSelectorWrapper:hover {
+  background-color: #eaeaea;
+}
+
+.languageText {
+  font-size: 12px;
+  font-weight: 400;
+  color: #606060;
+}

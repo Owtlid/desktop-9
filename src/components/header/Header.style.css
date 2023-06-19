@@ -1,0 +1,66 @@
+.headerWrapper {
+  height: 80px;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 80px;
+
+  background-color: #fff;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.headerActionsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.addToChromeButton {
+  width: 172px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.addToChromeButton:hover {
+  background-color: #eaeaea;
+}
+
+.chromeButtonText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b4b4b;
+}
+
+.upgradeToProButton {
+  width: 142px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #2d62ed;
+  border-radius: 6px;
+  border: none;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+
+  cursor: pointer;
+}
